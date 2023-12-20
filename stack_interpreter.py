@@ -90,7 +90,7 @@ if __name__ == "__main__":
             print_str = program[p_cmd]
             p_cmd += 1
             print(print_str)
-        elif cmd == "READ":
+        elif cmd == "INPUT":
             num = int(input())
             prog_stack.push(num)
         elif cmd == "JUMP.EQUAL.0":
