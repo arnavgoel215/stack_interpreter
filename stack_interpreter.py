@@ -86,6 +86,13 @@ if __name__ == "__main__":
             a = prog_stack.pop()
             b = prog_stack.pop()
             prog_stack.push(b - a)  # adds the difference of a and b to the stack
+        elif cmd == "PRINT":
+            print_str = program[p_cmd]
+            p_cmd += 1
+            print(print_str)
+        elif cmd == "READ":
+            num = int(input())
+            prog_stack.push(num)
         elif cmd == "JUMP.EQUAL.0":
             num = prog_stack.top()
             if num == 0:
